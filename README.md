@@ -26,7 +26,9 @@ y_test <- read.table("test/y_test.txt")
 # 1 Merges the training and the test sets to create one data set.
 # I use rbind to append test to train
 X_both <- rbind(X_train, X_test)
+
 rm(X_train, X_test)
+
 #this rm is optional, for freeing memory
 
 # 2 Extracts only the measurements on the mean and standard deviation for each measurement. 
